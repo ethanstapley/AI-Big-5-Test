@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Question</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>{{ q.text }}</h2>
+
+    {% if followup %}
+      <form action="{{ url_for('question') }}" method="get">
+        <input type="hidden" name="user_input" value="{{ user_input }}">
+        <input type="hidden" name="followup" value="{{ followup }}">
+        <label>{{ followup }}</label><br>
+        <textarea name="followup_response"></textarea><br>
+        <input type="submit" value="Submit Follow-up">
+      </form>    
+    {% else %}
+      <form method="post">
+        <textarea name="response"></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+    {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+openai
+numpy
+scipy
+pandas
+flask_session
+flask

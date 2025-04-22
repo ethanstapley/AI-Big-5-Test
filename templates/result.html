@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Personality Percentiles</h1>
+    <ul>
+      {% for trait, info in report.items() %}
+        <li><strong>{{ trait }}</strong>: {{ info.score }}/30 → {{ info.percentile }}th percentile</li>
+      {% endfor %}
+    </ul>
+    <br>
+    <h2>Personality Summary</h2>
+    <p>{{ summary | safe }}</p>
+  </div>
+</body>
+</html>
