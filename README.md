@@ -49,4 +49,4 @@ https://docs.google.com/document/d/1Lr-2g4rj2ktxI31l5Pbs-0jBNNh4qEv_Pe3NU3MWnoA/
 
 ---
 
-Portions of this project’s code and documentation were developed with the assistance of AI tools. All AI-generated content was reviewed, tested, and adapted by me to meet ensure correctness.
+Portions of this project’s code was developed with the assistance of AI tools. All AI-generated content was reviewed, tested, and adapted by me to meet ensure correctness.
